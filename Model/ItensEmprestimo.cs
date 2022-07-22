@@ -16,6 +16,7 @@ namespace BiblioDataInfo.Model
         [Column("IdLivro")]
         public long IdLivro { get; set; }
 
+
         [Column("DataEmprestimo")]
         [Required]
         [StringLength(20)]

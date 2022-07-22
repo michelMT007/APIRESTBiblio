@@ -30,9 +30,6 @@ namespace BiblioDataInfo.Model
         public bool EmprestimoAtivo { get; set; }
 
         public ICollection<ItensEmprestimo> Itens { get; set; }
-        public Emprestimo()
-        {
-            
-        }
+        public Emprestimo(){}
     }
 }
