@@ -29,7 +29,7 @@ namespace BiblioDataInfo.Model
         [Column("EmprestimoAtivo")]
         public bool EmprestimoAtivo { get; set; }
 
-        public ICollection<ItensEmprestimo> Itens { get; set; }
-        public Emprestimo(){}
+        public virtual ICollection<ItensEmprestimo> Itens { get; set; }
+        
     }
 }

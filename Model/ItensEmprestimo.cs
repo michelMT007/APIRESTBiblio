@@ -9,13 +9,11 @@ namespace BiblioDataInfo.Model
         [Key]   
         public int Id { get; set; }
         
-        
         [Column("IdEMprestimo")]
         public long IdEMprestimo { get; set; }
 
         [Column("IdLivro")]
         public long IdLivro { get; set; }
-
 
         [Column("DataEmprestimo")]
         [Required]
@@ -28,6 +26,9 @@ namespace BiblioDataInfo.Model
         public string DataDevolucao { get; set; }
         public bool Emprestado { get; set; }
 
+        [ForeignKey("Emprestimo")]
+        public long IdEmprestimo { get; set; }
+        public virtual Emprestimo Emprestimo { get; set; }      
 
         public ItensEmprestimo(long idemprestimo,long Idlivro)
         {
